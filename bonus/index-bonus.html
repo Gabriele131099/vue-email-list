@@ -17,10 +17,10 @@
 </head>
 <body>
         <div id="app">
-            <div v-if="emails.length === indice" v-for="email in emails">
+            <div v-if="visible" v-for="email in emails">
                 {{email}}
             </div>
-            <button @click="pushElement()">Stampa</button>
+            <button @click="pushElement()" @click="show" >Stampa</button>
         </div>
         <script src="./script/script.js"></script>
 </body>
