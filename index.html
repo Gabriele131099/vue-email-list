@@ -13,12 +13,16 @@
         <link rel="stylesheet" href="./css/style.css">
         <!-- libreria vue.js -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js">
 </head>
-<body id="app">
-    <div v-for="email in emails"></div>
-        {{email}}
-    </div>
-    <script src="./script/script.js"></script>
+<body>
+        <div id="app">
+            <div v-for="email in emails">
+
+                {{email}}
+            </div>
+            <button @click="createEmailRandom">invia</button>
+        </div>
+        <script src="./script/script.js"></script>
 </body>
 </html>
