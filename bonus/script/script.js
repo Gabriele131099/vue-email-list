@@ -19,9 +19,6 @@ new Vue(
                     }
                 
             },
-            createEmailRandom : function () {
-                
-            }
         }
     }
 );
