@@ -18,10 +18,8 @@ new Vue(
                     .then((response) => {
                         this.emails.push(response.data.response)
                     });
-                    if (i===this.indice ) {
-                        this.visible = true
-                    }
                 }
+                this.visible= true
             },
         }
     }
