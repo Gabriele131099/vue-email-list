@@ -17,7 +17,7 @@
 </head>
 <body>
         <div id="app">
-            <div v-if="emails.length === 5" v-for="email in emails">
+            <div v-if="emails.length === indice" v-for="email in emails">
                 {{email}}
             </div>
             <button @click="pushElement()">Stampa</button>

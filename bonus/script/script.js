@@ -6,19 +6,23 @@ new Vue(
         data: {
             emails :[],
         },
+        indice:0,
         methods: {
             pushElement: function () {
-               
-                    for (let i = 0; i < 5; i++) {
+                
+                let tmp = parseInt(prompt('quante mail vuoi stampare?'))
+            
+                    for (let i = 0; i <tmp ; i++) {
                         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                         .then((response) => {
                             this.emails.push(response.data.response)
                         });
-    
-                        
+                        this.indice++
                     }
-                
+                console.log(parseInt(tmp))
             },
+            createEmailRandom : function () {
+            }
         }
     }
 );
