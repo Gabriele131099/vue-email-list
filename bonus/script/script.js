@@ -6,9 +6,6 @@ new Vue(
         data: {
             emails :[],
         },
-        created(){
-            this.pushElement()
-        },
         methods: {
             pushElement: function () {
                
